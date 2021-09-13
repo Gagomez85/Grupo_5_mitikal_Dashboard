@@ -5,7 +5,7 @@ import SmallCard from "./SmallCard";
 
 /* <!-- Movies in DB --> */
 
-let moviesInDB = {
+let productsinDB = {
   title: "Productos en Stock",
   color: "primary",
   cuantity: 21,
@@ -14,7 +14,7 @@ let moviesInDB = {
 
 /* <!-- Total awards --> */
 
-let totalAwards = {
+let totalProducts = {
   title: " Total Productos",
   color: "success",
   cuantity: "79",
@@ -23,16 +23,16 @@ let totalAwards = {
 
 /* <!-- Actors quantity --> */
 
-let actorsQuantity = {
+let modelsQuantity = {
   title: "Cantidad de Modelos de Lenceria",
   color: "warning",
   cuantity: "49",
   icon: "fa-user-check",
 };
 
-let cartProps = [moviesInDB, totalAwards, actorsQuantity];
+let cartProps = [productsinDB, totalProducts, modelsQuantity];
 
-function ContentRowMovies() {
+function ContentRowProducts() {
   return (
     <div className="row">
       {cartProps.map((movie, i) => {
@@ -42,4 +42,4 @@ function ContentRowMovies() {
   );
 }
 
-export default ContentRowMovies;
+export default ContentRowProducts;
