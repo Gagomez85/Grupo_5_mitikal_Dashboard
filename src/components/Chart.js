@@ -39,6 +39,7 @@ function Chart() {
                 <th>Categoria</th>
                 <th>Color</th>
                 <th>Talle</th>
+                <th>Precio</th>
               </tr>
             </thead>
             <tfoot>
@@ -48,6 +49,7 @@ function Chart() {
                 <th>Categoria</th>
                 <th>Color</th>
                 <th>Talle</th>
+                <th>Precio</th>
               </tr>
             </tfoot>
             <tbody>
