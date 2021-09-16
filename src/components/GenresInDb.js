@@ -1,6 +1,6 @@
 import React from "react";
 
-function GenresInDb({ name }) {
+function GenresInDb({ description }) {
   return (
     <div className="col-lg-6 mb-4">
       <div className="card shadow mb-4">
@@ -14,9 +14,9 @@ function GenresInDb({ name }) {
             <div className="col-lg-6 mb-4">
               <div className="card bg-danger text-white shadow">
                 <div className="card-body">
-                  {name ? (
-                    name.map((item) => {
-                      return <li> {item.name} </li>;
+                  {description ? (
+                    description.map((item) => {
+                      return <li> {item.description} </li>;
                     })
                   ) : (
                     <h2>No hay productos</h2>
