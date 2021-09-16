@@ -12,8 +12,12 @@ function MitikalProducts() {
       })
       .catch((error) => console.error(error));
   }, []);
-
-  return <div>{products.length < 0 ? <GenresInDb name={products} /> : ""}</div>;
+  console.log(products);
+  return (
+    <div>
+      {products.length < 0 ? <GenresInDb description={products} /> : ""}
+    </div>
+  );
 }
 
 export default MitikalProducts;
