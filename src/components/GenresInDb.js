@@ -1,4 +1,5 @@
 import React from "react";
+import MitikalProducts from "./mitikal_products";
 
 function LastMovieInDb() {
   return (
@@ -13,7 +14,7 @@ function LastMovieInDb() {
           <div className="row">
             <div className="col-lg-6 mb-4">
               <div className="card bg-danger text-white shadow">
-                <div className="card-body">Conjunto Allison</div>
+                <div className="card-body">{product.name}</div>
               </div>
             </div>
             <div className="col-lg-6 mb-4">
