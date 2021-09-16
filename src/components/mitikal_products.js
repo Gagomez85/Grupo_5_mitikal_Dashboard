@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import GenresInDb from "./GenresInDb";
 
 function MitikalProducts() {
   const [products, setProducts] = useState([]);
@@ -7,26 +8,12 @@ function MitikalProducts() {
     fetch("http://127.0.0.1:3050/api/products/")
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data.results);
+        setProducts(data);
       })
       .catch((error) => console.error(error));
   }, []);
 
-  return (
-    <div>
-      <h2> Listado Productos Mitikal Store</h2>
-      <ul>
-        {products.length === 0 && <p> Loading </p>}
-        {products.map((product, i) => {
-          return (
-            <li key={i}>
-              <h3>{product.name}</h3>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
+  return <div>{products.length < 0 ? <GenresInDb name={products} /> : ""}</div>;
 }
 
 export default MitikalProducts;
