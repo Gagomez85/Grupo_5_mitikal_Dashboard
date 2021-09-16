@@ -14,7 +14,7 @@ function LastMovieInDb() {
           <div className="row">
             <div className="col-lg-6 mb-4">
               <div className="card bg-danger text-white shadow">
-                <div className="card-body">{product.name}</div>
+                <div className="card-body">Prueba</div>
               </div>
             </div>
             <div className="col-lg-6 mb-4">
