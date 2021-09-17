@@ -12,7 +12,7 @@ function MitikalProducts() {
       })
       .catch((error) => console.error(error));
   }, []);
-  console.log(products.length);
+  
   return (
     <>{products.length > 0 ? <Chart description={products} /> : ""}</>
   );
