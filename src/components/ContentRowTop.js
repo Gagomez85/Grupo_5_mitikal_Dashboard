@@ -1,7 +1,6 @@
 import React from "react";
 import ContentRowCenter from "./ContentRowCenter";
-import ContentRowMovies from "./ContentRowMovies";
-import MitikalCountProducts from "./mitikalTotalProducts";
+import MitikalTotal from "./MitikalTotal";
 import Chart from "./Chart";
 
 function ContentRowTop() {
@@ -14,7 +13,7 @@ function ContentRowTop() {
         </div>
 
         {/*<!-- Content Row Movies-->*/}
-        <ContentRowMovies />
+        <MitikalTotal />
         <ContentRowCenter />
         <Chart />
       </div>

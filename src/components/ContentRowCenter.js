@@ -1,13 +1,13 @@
 import React from "react";
-import LastMovieInDb from "./LastMovieInDb";
+import MitikalLastProduct from "./MitikalLastProduct";
 
-import MitikalProducts from "./mitikal_products";
+import MitikalProducts from "./MitikalProducts";
 
 function ContentRowCenter() {
   return (
     <div className="row">
       {/*<!-- Last Movie in DB -->*/}
-      <LastMovieInDb />
+      <MitikalLastProduct />
       {/*<!-- End content row last movie in Data Base -->*/}
 
       {/*<!-- Genres in DB -->*/}
