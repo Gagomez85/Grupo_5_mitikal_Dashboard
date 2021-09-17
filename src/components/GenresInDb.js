@@ -10,24 +10,31 @@ function GenresInDb({ description }) {
         </div>
         <div className="card-body">
           <div className="row">
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-danger text-white shadow">
-                <div className="card-body">
-                  {description ? (
-                    description.map((item) => {
-                      return <li> {item.description} </li>;
-                    })
-                  ) : (
-                    <h2>No hay productos</h2>
-                  )}
+            {description && description.length > 0 ? (
+              description.map((item) => {
+                return (
+                  <div className="col-lg-6 mb-4">
+                    <div className="card bg-danger text-white shadow">
+                      <div className="card-body">
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div className="col-lg-6 mb-4">
+                <div className="card bg-danger text-white shadow">
+                  <div className="card-body">
+                    <p>No Hay Productos Disponibles</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 }
-
 export default GenresInDb;

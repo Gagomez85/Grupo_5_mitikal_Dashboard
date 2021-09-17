@@ -1,21 +1,23 @@
 import { useState, useEffect } from "react";
-import GenresInDb from "./GenresInDb";
+import ContentRowMovies from "./ContentRowMovies";
 
-function MitikalProducts() {
+function MitikalCountProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:3050/api/products/")
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data.data.products);
+        setProducts(data.meta);
       })
       .catch((error) => console.error(error));
   }, []);
   console.log(products);
   return (
-    <>{products.length > 0 ? <GenresInDb description={products} /> : ""}</>
+    <>
+      {products.length > 0 ? <ContentRowMovies description={products} /> : ""}
+    </>
   );
 }
 
-export default MitikalProducts;
+export default MitikalCountProducts;
