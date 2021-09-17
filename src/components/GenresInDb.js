@@ -1,5 +1,4 @@
 import React from "react";
-
 function GenresInDb({ description }) {
   return (
     <div className="col-lg-6 mb-4">

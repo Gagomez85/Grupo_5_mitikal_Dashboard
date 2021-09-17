@@ -8,14 +8,14 @@ function MitikalProducts() {
     fetch("http://127.0.0.1:3050/api/products/")
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data);
+        setProducts(data.data.products);
       })
       .catch((error) => console.error(error));
   }, []);
   console.log(products);
   return (
     <div>
-      {products.length < 0 ? <GenresInDb description={products} /> : ""}
+      {products.length > 0 ? <GenresInDb description={products} /> : ""}
     </div>
   );
 }
