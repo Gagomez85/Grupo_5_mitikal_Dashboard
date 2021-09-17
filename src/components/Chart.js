@@ -1,25 +1,6 @@
 import React from "react";
 import ChartRow from "./ChartRow";
 
-let tableRowsData = [
-  {
-    name: "conjunto-allison",
-    description: "Conjunto Allison",
-    category: "Lenceria",
-    color: "Negro",
-    size: 1,
-    price: 2000,
-  },
-  {
-    name: "conjunto-olive",
-    description: "Conjunto Olive",
-    category: "Lenceria",
-    color: "Hueso",
-    size: 1,
-    price: 2000,
-  },
-];
-
 function Chart({description}) {
   return (
     /* <!-- DataTales Example --> */
@@ -36,16 +17,22 @@ function Chart({description}) {
               <tr>
                 <th>Nombre</th>
                 <th>Descripcion</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Categoria</th>
                 <th>Imagen</th>
-                <th>Detalle</th>
+                <th>Price</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Imagen</th>
-                <th>Detalle</th>
+              <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Total</th>
+                <th></th>
               </tr>
             </tfoot>
             <tbody>

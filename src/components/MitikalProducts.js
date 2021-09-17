@@ -5,14 +5,14 @@ function MitikalProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3050/api/products")
+    fetch("http://127.0.0.1:3050/api/products/listProductsAll")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data.data.products);
       })
       .catch((error) => console.error(error));
   }, []);
-  
+
   return (
     <>{products.length > 0 ? <Chart description={products} /> : ""}</>
   );
