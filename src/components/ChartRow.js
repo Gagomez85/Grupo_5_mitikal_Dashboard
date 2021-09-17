@@ -5,10 +5,8 @@ function ChartRow(props) {
     <tr>
       <td>{props.name}</td>
       <td>{props.description}</td>
-      <td>{props.category}</td>
-      <td>{props.color}</td>
-      <td>{props.size}</td>
-      <td>{props.price}</td>
+      <td>{props.image}</td>
+      <td>{props.Detalle}</td>
     </tr>
   );
 }

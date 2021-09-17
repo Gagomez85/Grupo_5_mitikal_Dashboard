@@ -1,7 +1,7 @@
 import React from "react";
 import ContentRowCenter from "./ContentRowCenter";
 import MitikalTotal from "./MitikalTotal";
-import Chart from "./Chart";
+import MitikalProducts from "./MitikalProducts";
 
 function ContentRowTop() {
   return (
@@ -15,7 +15,7 @@ function ContentRowTop() {
         {/*<!-- Content Row Movies-->*/}
         <MitikalTotal />
         <ContentRowCenter />
-        <Chart />
+        <MitikalProducts />
       </div>
       {/*<!--End Content Row Top-->*/}
     </React.Fragment>

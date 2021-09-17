@@ -1,6 +1,6 @@
 import React from "react";
 import MitikalLastProduct from "./MitikalLastProduct";
-import MitikalProducts from "./MitikalProducts";
+import MitikalCategory from "./MitikalCategory";
 
 function ContentRowCenter() {
   return (
@@ -10,7 +10,7 @@ function ContentRowCenter() {
       {/*<!-- End content row last movie in Data Base -->*/}
 
       {/*<!-- Genres in DB -->*/}
-      <MitikalProducts />
+      <MitikalCategory />
     </div>
   );
 }
