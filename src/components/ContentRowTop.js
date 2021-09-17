@@ -1,6 +1,7 @@
 import React from "react";
 import ContentRowCenter from "./ContentRowCenter";
 import ContentRowMovies from "./ContentRowMovies";
+import MitikalCountProducts from "./mitikalTotalProducts";
 import Chart from "./Chart";
 
 function ContentRowTop() {
