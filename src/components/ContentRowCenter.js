@@ -1,7 +1,7 @@
 import React from "react";
 import LastMovieInDb from "./LastMovieInDb";
+
 import MitikalProducts from "./mitikal_products";
-import GenresInDb from "./GenresInDb";
 
 function ContentRowCenter() {
   return (
@@ -12,7 +12,6 @@ function ContentRowCenter() {
 
       {/*<!-- Genres in DB -->*/}
       <MitikalProducts />
-      <GenresInDb />
     </div>
   );
 }
