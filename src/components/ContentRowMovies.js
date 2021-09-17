@@ -17,7 +17,7 @@ let productsinDB = {
 let totalProducts = {
   name: " Total de Productos",
   color: "success",
-  cuantity: count.total,
+  cuantity: 79,
   icon: "fa-tshirt",
 };
 
@@ -26,7 +26,7 @@ let totalProducts = {
 let modelsQuantity = {
   name: "Total de Categorias",
   color: "warning",
-  cuantity: ,
+  cuantity: 17,
   icon: "fa-female",
 };
 
