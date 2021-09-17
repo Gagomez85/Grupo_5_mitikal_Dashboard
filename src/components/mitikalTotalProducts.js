@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ContentRowMovies from "./ContentRowMovies";
 
 function MitikalCountProducts() {
-  const [products, setProducts] = useState([]);
+  const [totales, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:3050/api/products/")
@@ -12,12 +12,8 @@ function MitikalCountProducts() {
       })
       .catch((error) => console.error(error));
   }, []);
-  console.log(products);
-  return (
-    <>
-      {products.length > 0 ? <ContentRowMovies description={products} /> : ""}
-    </>
-  );
+  console.log(totales);
+  return <>{totales.length > 0 ? <ContentRowMovies count={totales} /> : ""}</>;
 }
 
 export default MitikalCountProducts;

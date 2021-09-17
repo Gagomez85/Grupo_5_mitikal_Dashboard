@@ -1,6 +1,6 @@
 import React from "react";
 import SmallCard from "./SmallCard";
-import MitikalCountProducts from "./mitikalTotalProducts";
+
 /*  Cada set de datos es un objeto literal */
 
 /* <!-- Movies in DB --> */
@@ -26,7 +26,7 @@ let totalProducts = {
 let modelsQuantity = {
   name: "Total de Categorias",
   color: "warning",
-  cuantity: 17,
+  cuantity: 21,
   icon: "fa-female",
 };
 
