@@ -1,6 +1,5 @@
 import React from "react";
 import MitikalLastProduct from "./MitikalLastProduct";
-
 import MitikalProducts from "./MitikalProducts";
 
 function ContentRowCenter() {
